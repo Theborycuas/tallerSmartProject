@@ -1,0 +1,13 @@
+package com.codesoftlution.tallerSmartBackend;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TallerSmartBackendApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TallerSmartBackendApplication.class, args);
+	}
+
+}
