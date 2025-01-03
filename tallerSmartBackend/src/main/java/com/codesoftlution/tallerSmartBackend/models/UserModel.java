@@ -27,11 +27,18 @@ public class UserModel {
     private String password;
 
     @ManyToOne
-    @JoinColumn(name = "userrol_id", nullable = false)
+    @JoinColumn(name = "rol_id", nullable = false)
     private UserRolModel rol;
 
     private String phone;
     private boolean active;
 
+    @Column(columnDefinition = "TEXT")
+    private String token;
+
+    @Column(columnDefinition = "TEXT")
+    private String tokenFirebase;
+
     private LocalDateTime creationDate;
+    private String linkFotoPerfil;
 }
