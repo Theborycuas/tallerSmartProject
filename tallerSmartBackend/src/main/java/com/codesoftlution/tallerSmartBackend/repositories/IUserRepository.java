@@ -1,4 +1,7 @@
 package com.codesoftlution.tallerSmartBackend.repositories;
 
-public interface IUserRepository {
+import com.codesoftlution.tallerSmartBackend.models.UserModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IUserRepository extends JpaRepository<UserModel, Long> {
 }
